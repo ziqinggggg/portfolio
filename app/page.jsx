@@ -18,29 +18,24 @@
 //   );
 // }
 
+
+import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
 import {FiDownload} from "react-icons/fi";
+import Resume from "./Resume";
+
+
 const Home = () => {
   return (
     <main>
-      <section id="home" className="pt-32 h-screen ">
+      <section id="home" className="pt-32 min-h-screen ">
         <div className="container mx-auto h-full">
-          Home Section
-          {/* <div className="flex flex-col items-center justify-center h-full gap-4">
-            <div className="flex flex-col xl:flex-row items-center justify-between">
-              <h1 className="text-4xl font-bold text-center">Lai Zi Qing</h1>
-            <p className="text-xl text-center">Full Stack Developer</p>
-            <Button>
-              <FiDownload className="mr-2" />
-              Download Resume
-            </Button>
-          </div></div> */}
           <div className="flex flex-col items-center justify-between md:flex-row md:pt-8 md:pb-24">
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left order-2 md:order-none">
               <h1 className="h1 mb-6">
                 Hello, I'm <br />
-                <span className="text-accent">Lai Zi Qing....</span>
+                <span className="text-accent">Lai Zi Qing</span>
               </h1>
               <p className="text-2xl text-primary/90">Full Stack Developer</p>
               <p className="max-w-[500px] mb-9 text-primary/80">
@@ -52,7 +47,7 @@ const Home = () => {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <Button
                   variant="outline"
-                  size="lg" 
+                  size="lg"
                   className="uppercase flex items-center duration-500"
                 >
                   <span className="mr-2">Download Resume</span>
@@ -66,18 +61,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
-            <div>photo</div>
+            <div className="order-1 md:order-none mb-8 md:mb-0">
+              <Photo />
+            </div>
           </div>
         </div>
       </section>
-      <section id="resume" className="pt-32 h-screen">
-        <div className="container mx-auto">Resume Section</div>
+      <section id="resume" className="pt-32 min-h-screen">
+        <div className="container mx-auto"><Resume/></div>
       </section>
-      <section id="projects" className="pt-32 h-screen">
+      <section id="projects" className="pt-32 min-h-screen">
         <div className="container mx-auto">Project Section</div>
       </section>
-      <section id="contact" className="pt-32 h-screen">
+      <section id="contact" className="pt-32 min-h-screen">
         <div className="container mx-auto">Contact Section</div>
       </section>
     </main>

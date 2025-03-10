@@ -10,7 +10,7 @@ const socials = [
   },
   {
     icon: <FaGithub/>,
-    url: "",
+    url: "bla",
   },
 ];
 
