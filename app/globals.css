@@ -131,6 +131,7 @@
   }
   html {
   scroll-behavior: smooth;
+  scroll-padding-top:190px;
   } 
   .h1{
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
@@ -143,3 +144,7 @@
   }
 }
 
+@media (max-width: 768px) { /* Small mobile screens */
+  html {
+    scroll-padding-top: 80px;
+  }}

@@ -1,36 +1,17 @@
-// export default function Home() {
-//   return (
-//     <main>
-//       {/* Whereas disregard and contempt for human rights have */}
-//       <section id="home" className="pt-32 ">
-//         Home Section
-//       </section>
-//       <section id="resume" className="pt-32 h-screen">
-//         Resume Section
-//       </section>
-//       <section id="projects" className="pt-32 h-screen">
-//         Projects Section{" "}
-//       </section>
-//       <section id="contact" className="pt-32 h-screen">
-//         Contact Section
-//       </section>
-//     </main>
-//   );
-// }
-
-
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
-import {FiDownload} from "react-icons/fi";
-import Resume from "./Resume";
+import { FiDownload } from "react-icons/fi";
 
+import Resume from "./Resume";
+import Project from "./Project";
 
 const Home = () => {
   return (
     <main>
+      {/* Home */}
       <section id="home" className="pt-32 min-h-screen ">
-        <div className="container mx-auto h-full">
+        <div className="container mx-auto h-full px-4">
           <div className="flex flex-col items-center justify-between md:flex-row md:pt-8 md:pb-24">
             <div className="text-center md:text-left order-2 md:order-none">
               <h1 className="h1 mb-6">
@@ -48,7 +29,7 @@ const Home = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center duration-500"
+                  className="uppercase flex items-center duration-10 hover:-translate-y-1"
                 >
                   <span className="mr-2">Download Resume</span>
                   <FiDownload />
@@ -56,7 +37,7 @@ const Home = () => {
                 <div className="mb-8 md:mb-0">
                   <Socials
                     containerStyles="flex gap-6"
-                    iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-secondary hover:transition-all duration-500"
+                    iconStyles="w-13 h-13 border border-accent rounded-full flex justify-center items-center text-accent text-xl hover:bg-accent hover:text-secondary hover:transition-all duration-10 hover:-translate-y-1"
                   />
                 </div>
               </div>
@@ -67,17 +48,29 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="resume" className="pt-32 min-h-screen">
-        <div className="container mx-auto"><Resume/></div>
+
+      {/* Resume */}
+      <section id="resume" className="">
+        <div className="container mx-auto">
+          <Resume />
+        </div>
       </section>
-      <section id="projects" className="pt-32 min-h-screen">
-        <div className="container mx-auto">Project Section</div>
+
+      {/* Projects */}
+      <section id="projects" className="">
+        <div className="container mx-auto">
+          <Project />
+        </div>
       </section>
-      <section id="contact" className="pt-32 min-h-screen">
-        <div className="container mx-auto">Contact Section</div>
-      </section>
+
+
+      <footer className="mt-auto w-full text-center pb-2 ">
+        <p className="text-sm text-primary/60">
+          © {new Date().getFullYear()} Lai Zi Qing. All rights reserved.
+        </p>
+      </footer>
     </main>
   );
-}
+};
 
 export default Home;
