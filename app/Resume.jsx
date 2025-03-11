@@ -16,7 +16,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+65) 2222 4444",
+      fieldValue: "(+65) 8826 0113",
     },
     {
       fieldName: "Email",
@@ -41,7 +41,7 @@ const experience = {
         company:'Seagate Singapore',
         position: 'Engineering Intern',
         duration: 'Jan 2023 - Jul 2023',
-        description: '...........................',
+        description: 'Conducted testing on storage devices, analyzed failures, validated bugs with functional teams, and leveraged automation to enhance manual testing efficiency.',
     }]
 };
 

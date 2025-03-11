@@ -21,7 +21,7 @@ const projects = [
         description: 'An Android application that allows user to capture graphical information from a form.',
         stack: [{name: 'Flutter'}, {name: 'FireBase'}],
         image: '/assets/work/thumb1.png',
-        live: '',
+        live: null,
         github: 'https://github.com/ziqinggggg/formcapture3.git',
     },
     {
@@ -31,7 +31,7 @@ const projects = [
         stack: [{name: 'HTML'}, {name: 'CSS'}, {name: 'JavaScript'}, {name: 'PHP'}, {name: 'SQL'}],
         image: '/assets/work/thumb1.png',
         live: '',
-        github: '',
+        github: 'https://github.com/ziqinggggg/Fashion-Science',
     }
 ]
 
@@ -54,23 +54,25 @@ const Project = () => {
               {project.num}
             </div>
             {/* project title */}
-            <div className='container flex flex-wrap flex-row gap-4'>
+            <div className="container flex flex-wrap flex-row gap-4">
               <h2 className="text-[42px] font-bold leading-none group-hover:text-accent transition-all duration-500 capitalize">
                 {project.title}
               </h2>
               {/* button */}
               <div className="flex items-end gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={10}>
-                    <Tooltip>
-                      <TooltipTrigger className="cursor-pointer w-[30px] h-[30px] bg-transparent rounded-full flex justify-center items-center group">
-                        <BsArrowUpRight className="text-primary text-2xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>View Project</TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={10}>
+                      <Tooltip>
+                        <TooltipTrigger className="cursor-pointer w-[30px] h-[30px] bg-transparent rounded-full flex justify-center items-center group">
+                          <BsArrowUpRight className="text-primary text-2xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>View Project</TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
                 {/* github project button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={10}>
