@@ -152,21 +152,21 @@ const Resume = () => {
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="px-4 gap-[30px] grid grid-cols-1 xl:grid-cols-2">
+                  <ul className="px-4 gap-[30px] grid grid-cols-1 xl:grid-cols-1">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="flex flex-col gap-1 bg-secondary/80 p-4 rounded-xl py-6 px-10 justify-center items-center xl:items-start hover:-translate-y-1"
+                          className="flex flex-col gap-1 bg-secondary/80 p-4 rounded-xl py-6 px-10 justify-center items-center md:items-start hover:-translate-y-1"
                         >
                           <p className="text-accent">{item.duration}</p>
                           <h3 className="text-xl font-semibold">
                             {item.company}
                           </h3>
 
-                          <p className="text-primary/80">{item.position}</p>
+                          <p className="text-primary/90">{item.position}</p>
 
-                          <p className="text-primary/80">{item.description}</p>
+                          <p className="text-primary/60">{item.description}</p>
                         </li>
                       );
                     })}
