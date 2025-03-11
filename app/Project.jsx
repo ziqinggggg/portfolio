@@ -17,18 +17,18 @@ import SliderButton from '@/components/SliderButton';
 const projects = [
     {
         num: '01',
-        title: 'Web Application',
-        description: 'blablablabla sdfasdfasdf',
-        stack: [{name: 'HTML'}, {name: 'CSS'}, {name: 'JavaScript'}, {name: 'PHP'}],
+        title: 'Mobile Application',
+        description: 'An Android application that allows user to capture graphical information from a form.',
+        stack: [{name: 'Flutter'}, {name: 'FireBase'}],
         image: '/assets/work/thumb1.png',
         live: '',
-        github: '',
+        github: 'https://github.com/ziqinggggg/formcapture3.git',
     },
     {
         num: '02',
-        title: 'Mobile Application',
-        description: 'blablablab laas dfasdf',
-        stack: [{name: 'Flutter'}, {name: 'FireBase'}],
+        title: 'Web Application',
+        description: 'An online fashion retail web portal that allows customers to browse and purchase items online.',
+        stack: [{name: 'HTML'}, {name: 'CSS'}, {name: 'JavaScript'}, {name: 'PHP'}, {name: 'SQL'}],
         image: '/assets/work/thumb1.png',
         live: '',
         github: '',
@@ -50,7 +50,7 @@ const Project = () => {
         <div className="w-full md:max-w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none">
           <div className="flex flex-col gap-[30px] ">
             {/* project num */}
-            <div className="text-8xl leading-none font-extrabold text-primary/50">
+            <div className="text-8xl leading-none font-extrabold text-primary/90">
               {project.num}
             </div>
             {/* project title */}

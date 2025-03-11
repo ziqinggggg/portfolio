@@ -31,8 +31,15 @@ const Home = () => {
                   size="lg"
                   className="uppercase flex items-center duration-10 hover:-translate-y-1"
                 >
-                  <span className="mr-2">Download Resume</span>
-                  <FiDownload />
+                  <a
+                    href="assets/Resume-LaiZiQing.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <span className="mr-2">Download Resume</span>
+                    <FiDownload />
+                  </a>
                 </Button>
                 <div className="mb-8 md:mb-0">
                   <Socials
@@ -62,7 +69,6 @@ const Home = () => {
           <Project />
         </div>
       </section>
-
 
       <footer className="mt-auto w-full text-center pb-2 ">
         <p className="text-sm text-primary/60">

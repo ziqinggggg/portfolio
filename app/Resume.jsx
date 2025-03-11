@@ -8,35 +8,34 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix
 
 const about = {
   title: "About Me",
-  description:
-    "...........................",
+  description: "",
   info: [
     {
       fieldName: "Name",
       fieldValue: "Lai Zi Qing",
     },
     {
-        fieldName: "Phone",
-        fieldValue: "(+65) 2222 4444",
+      fieldName: "Phone",
+      fieldValue: "(+65) 2222 4444",
     },
     {
-        fieldName: "Email",
-        fieldValue: "ziqing0914@gmail.com",
+      fieldName: "Email",
+      fieldValue: "ziqing0914@gmail.com",
     },
     {
-        fieldName: "Nationality",
-        fieldValue: "Malaysian",
+      fieldName: "Nationality",
+      fieldValue: "Malaysian",
     },
     {
-        fieldName: "Languages",
-        fieldValue: "English, Mandarin, Malay",
+      fieldName: "Languages",
+      fieldValue: "English, Mandarin, Malay",
     },
   ],
 };
 
 const experience = {
     icon: 'assets/resume/badge.svg',
-    title: 'Job Experience',
+    title: 'Internship Experience',
     description: '',
     items:[{
         company:'Seagate Singapore',
@@ -66,7 +65,7 @@ const education = {
 
 const skills = {
     title: 'My Skills',
-    description: '...........................',
+    description: '',
     skillList: [
         {
             name: 'HTML5',

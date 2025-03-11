@@ -13,7 +13,7 @@ const socials = [
   {
     name: "GitHub",
     icon: <FaGithub/>,
-    url: "bla",
+    url: "https://github.com/ziqinggggg",
   },
   {
     name: "WhatsApp",
