@@ -18,7 +18,7 @@ const Home = () => {
                 Hello, I'm <br />
                 <span className="text-accent">Lai Zi Qing</span>
               </h1>
-              <p className="text-2xl text-primary/90">Full Stack Developer</p>
+              <p className="text-2xl text-primary/90">Software Engineer</p>
               <p className="max-w-[500px] mb-9 text-primary/80">
                 I'm a frest graduate from NTU with a degree in Electrical and
                 Electronic Engineering. I have a passion for software
@@ -71,7 +71,7 @@ const Home = () => {
       </section>
 
       <footer className="mt-auto w-full text-center pb-2 ">
-        <p className="text-sm text-primary/60">
+        <p className="text-sm text-primary/50">
           © {new Date().getFullYear()} Lai Zi Qing. All rights reserved.
         </p>
       </footer>

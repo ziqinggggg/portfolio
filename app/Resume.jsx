@@ -1,9 +1,19 @@
 "use client";
 import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript, SiFlutter, SiDocker } from 'react-icons/si';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiFlutter,
+  SiDocker,
+} from "react-icons/si";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@radix-ui/react-tooltip";
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const about = {
@@ -34,26 +44,27 @@ const about = {
 };
 
 const experience = {
-    icon: 'assets/resume/badge.svg',
-    title: 'Internship Experience',
-    description: '',
-    items:[{
-        company:'Seagate Singapore',
-        position: 'Engineering Intern',
-        duration: 'Jan 2023 - Jul 2023',
-        description: 'Conducted testing on storage devices, analyzed failures, validated bugs with functional teams, and leveraged automation to enhance manual testing efficiency.',
-    }]
+  title: "Internship Experience",
+  description: "",
+  items: [
+    {
+      company: "Seagate Singapore",
+      position: "Engineering Intern",
+      duration: "Jan 2023 - Jul 2023",
+      description:
+        "Conducted testing on storage devices, analyzed failures, validated bugs with functional teams, and leveraged automation to enhance manual testing efficiency.",
+    },
+  ],
 };
 
 const education = {
-  icon: "assets/resume/cap.svg",
   title: "My Education",
   description: "",
   items: [
     {
       institution: "Nanyang Technological University (NTU)",
       degree: "Bachelor of Engineering (Electrical and Electronic Engineering)",
-      duration: "Aug 2020 - Jul 2024",
+      duration: "2020 - 2024",
     },
     {
       institution: "LinkedIn Learning",
@@ -64,42 +75,42 @@ const education = {
 };
 
 const skills = {
-    title: 'My Skills',
-    description: '',
-    skillList: [
-        {
-            name: 'HTML5',
-            icon: <FaHtml5 />,
-        },
-        {
-            name: 'CSS3',
-            icon: <FaCss3 />,
-        },
-        {
-            name: 'JavaScript',
-            icon: <FaJs />,
-        },
-        {
-            name: 'React.Js',
-            icon: <FaReact />,
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: <SiTailwindcss />,
-        },
-        {
-            name: 'TypeScript',
-            icon: <SiTypescript />,
-        },
-        {
-            name: 'Flutter',
-            icon: <SiFlutter />,
-        },
-        {
-            name: 'Docker',
-            icon: <SiDocker />,
-        },
-    ],
+  title: "My Skills",
+  description: "",
+  skillList: [
+    {
+      name: "HTML5",
+      icon: <FaHtml5 />,
+    },
+    {
+      name: "CSS3",
+      icon: <FaCss3 />,
+    },
+    {
+      name: "JavaScript",
+      icon: <FaJs />,
+    },
+    {
+      name: "React.Js",
+      icon: <FaReact />,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss />,
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript />,
+    },
+    {
+      name: "Flutter",
+      icon: <SiFlutter />,
+    },
+    {
+      name: "Docker",
+      icon: <SiDocker />,
+    },
+  ],
 };
 
 const Resume = () => {
@@ -151,7 +162,7 @@ const Resume = () => {
                 <p className="max-w-[680px] text-primary/60 mx-auto md:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[400px] overflow-auto">
                   <ul className="px-4 gap-[30px] grid grid-cols-1 xl:grid-cols-1">
                     {experience.items.map((item, index) => {
                       return (
@@ -163,10 +174,9 @@ const Resume = () => {
                           <h3 className="text-xl font-semibold">
                             {item.company}
                           </h3>
-
-                          <p className="text-primary/90">{item.position}</p>
-
-                          <p className="text-primary/60">{item.description}</p>
+                          <p>{item.position}</p>
+                          <div className="border-b border-primary/80 w-full my-2"></div>
+                          <p className="text-primary/80">{item.description}</p>
                         </li>
                       );
                     })}
@@ -219,21 +229,27 @@ const Resume = () => {
                           key={index}
                           // className="flex flex-col gap-1 bg-secondary/80 p-4 rounded-xl py-6 px-10 justify-center items-center md:items-start "
                         >
-                          {/* <p className="text-accent">{skill.name}</p>
-                          <h3 className="text-xl font-semibold">
-                          </h3> */}
-                          <TooltipProvider delayDuration={10}>
+                          {/* <TooltipProvider delayDuration={10}>
                             <Tooltip>
                               <TooltipTrigger className="cursor-pointer w-full h-[150px] bg-secondary/80 p-4 rounded-xl flex justify-center items-center group hover:-translate-y-1">
-                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300 flex flex-col items-center">
+                                  <div>
                                   {skill.icon}
+                                  </div>
+                                  <div className="text-base">{skill.name}</div>
                                 </div>
                               </TooltipTrigger>
                               <TooltipContent>
                                 <p>{skill.name}</p>
                               </TooltipContent>
                             </Tooltip>
-                          </TooltipProvider>
+                          </TooltipProvider> */}
+                          <div className="cursor-pointer w-full h-[150px] bg-secondary/80 p-4 rounded-xl flex justify-center items-center group hover:-translate-y-1">
+                            <div className="text-6xl group-hover:text-accent transition-all duration-300 flex flex-col items-center">
+                              <div>{skill.icon}</div>
+                              <div className="text-base">{skill.name}</div>
+                            </div>
+                          </div>
                         </li>
                       );
                     })}

@@ -54,10 +54,9 @@ return (
       {/* logo */}
       <div className="mt-32 mb-32 text-center text-2xl">
         <Link href="/" onClick={() => setIsOpen(false)}>
-          <h1 className="text-4xl font-semibold">
-            {" "}
-            <span className="text-accent">-</span>LZQ
-            <span className="text-accent">-</span>
+          <h1 className="text-4xl font-semibold hover:text-primary/80 group">
+            <span className="text-accent group-hover:text-accent/80">-</span>LZQ
+            <span className="text-accent group-hover:text-accent/80">-</span>
           </h1>
         </Link>
       </div>

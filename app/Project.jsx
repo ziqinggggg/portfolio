@@ -40,7 +40,7 @@ const Project = () => {
     const [project, setProject] = useState(projects[0]);
 
     const handleSlideChange = (swiper) => {
-        const currentIndex = swiper.activeIndex;
+        const currentIndex = swiper.realIndex;
         setProject(projects[currentIndex]);
     }
 
@@ -50,7 +50,7 @@ const Project = () => {
         <div className="w-full md:max-w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none">
           <div className="flex flex-col gap-[30px] ">
             {/* project num */}
-            <div className="text-8xl leading-none font-extrabold text-primary/90">
+            <div className="text-8xl leading-none font-extrabold text-accent/90">
               {project.num}
             </div>
             {/* project title */}
@@ -87,7 +87,7 @@ const Project = () => {
               </div>
             </div>
             {/* project description */}
-            <p className="text-primary/60">{project.description}</p>
+            <p className="text-primary/80">{project.description}</p>
             {/* project stack */}
             <ul className="flex gap-2 w-full flex-wrap">
               {project.stack.map((stack, index) => (
@@ -102,7 +102,7 @@ const Project = () => {
               ))}
             </ul>
             {/* border */}
-            <div className="border-b border-primary/50"></div>
+            <div className="border-b border-primary/80"></div>
           </div>
         </div>
         <div className="w-full md:w-[50%]">
@@ -111,6 +111,7 @@ const Project = () => {
             slidesPerView={1}
             className="md:h-[520px] mb-12"
             onSlideChange={handleSlideChange}
+            loop={true}
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index} className="w-full">
@@ -131,11 +132,11 @@ const Project = () => {
             ))}
             {/* <SliderButton
               containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 w-full justify-between"
-              buttonStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all cursor-pointer"
+              buttonStyles="bg-primary/30 hover:bg-accent/80 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all cursor-pointer"
             /> */}
             <SliderButton
               containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] md:bottom-0 z-20 w-full justify-between md:w-max md:justify-none"
-              buttonStyles="bg-accent hover:bg-accent/80 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all cursor-pointer"
+              buttonStyles="bg-primary/30 hover:bg-accent/80 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all cursor-pointer"
             />
           </Swiper>
         </div>
