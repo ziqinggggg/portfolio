@@ -131,7 +131,7 @@
   }
   html {
   scroll-behavior: smooth;
-  scroll-padding-top:190px;
+  scroll-padding-top:160px;
   } 
   .h1{
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;

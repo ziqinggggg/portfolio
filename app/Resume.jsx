@@ -4,7 +4,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiFlutter,
-  SiDocker,
+  SiDocker,SiFirebase, SiTensorflow, SiCisco
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -87,10 +87,6 @@ const skills = {
       icon: <FaCss3 />,
     },
     {
-      name: "JavaScript",
-      icon: <FaJs />,
-    },
-    {
       name: "React.Js",
       icon: <FaReact />,
     },
@@ -107,9 +103,22 @@ const skills = {
       icon: <SiFlutter />,
     },
     {
+      name: "Firebase",
+      icon: <SiFirebase />,
+    },
+    {
       name: "Docker",
       icon: <SiDocker />,
     },
+    {
+      name: "Cisco",
+      icon: <SiCisco />,
+    },
+    {
+      name: "TensorFlow",
+      icon: <SiTensorflow />,
+    },
+    
   ],
 };
 
