@@ -124,7 +124,7 @@ const skills = {
 
 const Resume = () => {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center py-12 md:py-0 px-4">
+    <div className="flex items-center justify-center py-12 md:py-0 px-4">
       <div className="container mx-auto">
         <Tabs
           defaultValue="about"

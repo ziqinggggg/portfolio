@@ -20,7 +20,7 @@ const projects = [
         title: 'Mobile Application',
         description: 'An Android application that allows user to capture graphical information from a form.',
         stack: [{name: 'Flutter'}, {name: 'FireBase'}],
-        image: '/assets/work/thumb1.png',
+        image: '/assets/formcapture/552shots_so.png',
         live: null,
         github: 'https://github.com/ziqinggggg/formcapture3.git',
     },
@@ -45,7 +45,7 @@ const Project = () => {
     }
 
   return (
-    <div className="container justify-center mx-auto py-12 md:py-0 min-h-[80vh] px-4">
+    <div className="container justify-center mx-auto py-12 md:py-0 px-4">
       <div className="flex flex-col md:flex-row md:gap-[30px]">
         <div className="w-full md:max-w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none">
           <div className="flex flex-col gap-[30px] ">

@@ -2,6 +2,7 @@ import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { Analytics } from "@vercel/analytics/react"
 
 import Resume from "./Resume";
 import Project from "./Project";
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <main>
       {/* Home */}
+      <Analytics/>
       <section id="home" className="pt-32 min-h-screen ">
         <div className="container mx-auto h-full px-4">
           <div className="flex flex-col items-center justify-between md:flex-row md:pt-8 md:pb-24">
@@ -57,14 +59,14 @@ const Home = () => {
       </section>
 
       {/* Resume */}
-      <section id="resume" className="">
+      <section id="resume" className="min-h-[90vh]">
         <div className="container mx-auto">
           <Resume />
         </div>
       </section>
 
       {/* Projects */}
-      <section id="projects" className="">
+      <section id="projects" className="min-h-[90vh]">
         <div className="container mx-auto">
           <Project />
         </div>
