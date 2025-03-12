@@ -20,8 +20,8 @@ const projects = [
         title: 'Mobile Application',
         description: 'An Android application that allows user to capture graphical information from a form.',
         stack: [{name: 'Flutter'}, {name: 'FireBase'}],
-        image: '/assets/formcapture/552shots_so.png',
-        live: null,
+        image: '/assets/formcapture/544shots_so.png',
+        live: '',
         github: 'https://github.com/ziqinggggg/formcapture3.git',
     },
     {
@@ -29,8 +29,8 @@ const projects = [
         title: 'Web Application',
         description: 'An online fashion retail web portal that allows customers to browse and purchase items online.',
         stack: [{name: 'HTML'}, {name: 'CSS'}, {name: 'JavaScript'}, {name: 'PHP'}, {name: 'SQL'}],
-        image: '/assets/work/thumb1.png',
-        live: '',
+        image: '/assets/fashion-science/838shots_so.png',
+        live: 'http://fashion-science.onlinewebshop.net/index.php',
         github: 'https://github.com/ziqinggggg/Fashion-Science',
     }
 ]
