@@ -4,7 +4,10 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiFlutter,
-  SiDocker,SiFirebase, SiTensorflow, SiCisco
+  SiDocker,
+  SiFirebase,
+  SiTensorflow,
+  SiCisco,
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -15,6 +18,7 @@ import {
   TooltipTrigger,
 } from "@radix-ui/react-tooltip";
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { FiExternalLink } from "react-icons/fi";
 
 const about = {
   title: "About Me",
@@ -27,10 +31,23 @@ const about = {
     {
       fieldName: "Phone",
       fieldValue: "(+65) 8826 0113",
+      // fieldValue: (
+      //   <a
+      //     href="https://wa.me/6588260113"
+      //     className="hover:underline"
+      //   >
+      //     (+65) 8826 0113
+      //   </a>
+      // ),
     },
     {
       fieldName: "Email",
-      fieldValue: "ziqing0914@gmail.com",
+      fieldValue: (
+          <a href="mailto:ziqing0914@gmail.com" className="flex items-center gap-2 group hover:underline ">
+            ziqing0914@gmail.com
+            <FiExternalLink className=""/>
+          </a>
+      ),
     },
     {
       fieldName: "Nationality",
@@ -118,7 +135,6 @@ const skills = {
       name: "TensorFlow",
       icon: <SiTensorflow />,
     },
-    
   ],
 };
 
@@ -148,7 +164,7 @@ const Resume = () => {
                 <p className="max-w-[680px] text-primary/60 mx-auto md:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6  mx-auto lg:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-1 gap-y-6  mx-auto lg:mx-0">
                   {about.info.map((info, index) => {
                     return (
                       <li
