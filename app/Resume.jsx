@@ -103,22 +103,6 @@ const skills = {
   description: "",
   skillList: [
     {
-      name: "Python",
-      icon: <SiPython />,
-    },
-    {
-      name: "TypeScript",
-      icon: <SiTypescript />,
-    },
-    {
-      name: "HTML5",
-      icon: <FaHtml5 />,
-    },
-    {
-      name: "CSS3",
-      icon: <FaCss3 />,
-    },
-    {
       name: "React.Js",
       icon: <FaReact />,
     },
@@ -134,6 +118,22 @@ const skills = {
     {
       name: "Firebase",
       icon: <SiFirebase />,
+    },
+    {
+      name: "CSS3",
+      icon: <FaCss3 />,
+    },
+    {
+      name: "Python",
+      icon: <SiPython />,
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript />,
+    },
+    {
+      name: "HTML5",
+      icon: <FaHtml5 />,
     },
     {
       name: "Docker",
