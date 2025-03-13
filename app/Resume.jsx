@@ -4,10 +4,13 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiFlutter,
+  SiDart,
   SiDocker,
   SiFirebase,
   SiTensorflow,
-  SiCisco, SiPython, SiC
+  SiCisco,
+  SiPython,
+  SiC,
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -44,10 +47,10 @@ const about = {
     {
       fieldName: "Email",
       fieldValue: (
-          <a href="mailto:ziqing0914@gmail.com" className="hover:underline ">
-            ziqing0914@gmail.com
-            <FiExternalLink className="ml-2 inline-block"/>
-          </a>
+        <a href="mailto:ziqing0914@gmail.com" className="hover:underline ">
+          ziqing0914@gmail.com
+          <FiExternalLink className="ml-2 inline-block" />
+        </a>
       ),
     },
     {
@@ -116,6 +119,10 @@ const skills = {
       icon: <SiFlutter />,
     },
     {
+      name: "Dart",
+      icon: <SiDart />,
+    },
+    {
       name: "Firebase",
       icon: <SiFirebase />,
     },
@@ -161,7 +168,6 @@ const Resume = () => {
             <TabsTrigger value="skills">Skills</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
-
             {/* About Me */}
             <TabsContent
               value="about"
@@ -238,7 +244,9 @@ const Resume = () => {
                           <h3 className="text-xl font-semibold">
                             {item.degree}
                           </h3>
-                          <p className="text-primary/90">{item.specialization}</p>
+                          <p className="text-primary/90">
+                            {item.specialization}
+                          </p>
                           <p className="text-primary/80">{item.institution}</p>
                         </li>
                       );
