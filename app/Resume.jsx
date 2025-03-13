@@ -7,7 +7,7 @@ import {
   SiDocker,
   SiFirebase,
   SiTensorflow,
-  SiCisco,
+  SiCisco, SiPython, SiC
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -19,6 +19,7 @@ import {
 } from "@radix-ui/react-tooltip";
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { FiExternalLink } from "react-icons/fi";
+import { CiLocationOn } from "react-icons/ci";
 
 const about = {
   title: "About Me",
@@ -43,9 +44,9 @@ const about = {
     {
       fieldName: "Email",
       fieldValue: (
-          <a href="mailto:ziqing0914@gmail.com" className="flex items-center gap-2 group hover:underline ">
+          <a href="mailto:ziqing0914@gmail.com" className="hover:underline ">
             ziqing0914@gmail.com
-            <FiExternalLink className=""/>
+            <FiExternalLink className="ml-2 inline-block"/>
           </a>
       ),
     },
@@ -79,8 +80,14 @@ const education = {
   description: "",
   items: [
     {
-      institution: "Nanyang Technological University (NTU)",
+      institution: (
+        <>
+          <CiLocationOn className="inline-block text-accent text-2xl mr-2" />
+          Nanyang Technological University (NTU)
+        </>
+      ),
       degree: "Bachelor of Engineering (Electrical and Electronic Engineering)",
+      specialization: "Specialization: Info-communication Engineering",
       duration: "2020 - 2024",
     },
     {
@@ -96,6 +103,14 @@ const skills = {
   description: "",
   skillList: [
     {
+      name: "Python",
+      icon: <SiPython />,
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript />,
+    },
+    {
       name: "HTML5",
       icon: <FaHtml5 />,
     },
@@ -108,13 +123,10 @@ const skills = {
       icon: <FaReact />,
     },
     {
-      name: "Tailwind CSS",
+      name: "Tailwind CSS v4",
       icon: <SiTailwindcss />,
     },
-    {
-      name: "TypeScript",
-      icon: <SiTypescript />,
-    },
+
     {
       name: "Flutter",
       icon: <SiFlutter />,
@@ -130,10 +142,6 @@ const skills = {
     {
       name: "Cisco",
       icon: <SiCisco />,
-    },
-    {
-      name: "TensorFlow",
-      icon: <SiTensorflow />,
     },
   ],
 };
@@ -153,6 +161,7 @@ const Resume = () => {
             <TabsTrigger value="skills">Skills</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
+
             {/* About Me */}
             <TabsContent
               value="about"
@@ -218,7 +227,7 @@ const Resume = () => {
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="px-4  gap-[30px] grid grid-cols-1 xl:grid-cols-2">
+                  <ul className="px-4  gap-[30px] grid grid-cols-1 xl:grid-cols-1">
                     {education.items.map((item, index) => {
                       return (
                         <li
@@ -229,7 +238,7 @@ const Resume = () => {
                           <h3 className="text-xl font-semibold">
                             {item.degree}
                           </h3>
-
+                          <p className="text-primary/90">{item.specialization}</p>
                           <p className="text-primary/80">{item.institution}</p>
                         </li>
                       );
@@ -270,7 +279,7 @@ const Resume = () => {
                             </Tooltip>
                           </TooltipProvider> */}
                           <div className="cursor-pointer w-full h-[150px] bg-secondary/80 p-4 rounded-xl flex justify-center items-center group hover:-translate-y-1">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300 flex flex-col items-center">
+                            <div className="text-6xl group-hover:text-accent transition-all duration-300 flex flex-col items-center gap-1">
                               <div>{skill.icon}</div>
                               <div className="text-base">{skill.name}</div>
                             </div>
