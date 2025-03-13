@@ -3,6 +3,7 @@ import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiTypescript,
+  SiJavascript,
   SiFlutter,
   SiDart,
   SiDocker,
@@ -137,6 +138,10 @@ const skills = {
     {
       name: "TypeScript",
       icon: <SiTypescript />,
+    },
+    {
+      name: "TypeScript",
+      icon: <SiJavascript />,
     },
     {
       name: "HTML5",
