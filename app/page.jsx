@@ -22,10 +22,8 @@ const Home = () => {
               </h1>
               <p className="text-2xl text-primary/90">Software Engineer</p>
               <p className="max-w-[500px] mb-9 text-primary/80">
-                I'm a fresh graduate from NTU with a <b>degree in Electrical and
-                Electronic Engineering</b>, specializing in Info-communication Engineering. I have a passion for software
-                development and I'm always looking for new challenges to improve
-                my skills.
+                I'm a fresh graduate from NTU with a <b>Bachelor of Engineering (Electrical and Electronic Engineering)</b>, specializing in Info-communication Engineering. I have a passion for software
+                development and I'm always looking for new challenges to improve my skills.
               </p>
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <Button

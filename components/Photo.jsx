@@ -9,7 +9,7 @@ const Photo = () => {
       <motion.div>
         <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px]">
           <Image
-            src="/assets/grad_pic1.png"
+            src="/assets/grad_pic3.jpg"
             priority
             quality={100}
             fill
