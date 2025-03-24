@@ -35,16 +35,18 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: 
-      "(+65) 8826 0113 / (+60) 11 5403 0113",
-      // fieldValue: (
-      //   <a
-      //     href="https://wa.me/6588260113"
-      //     className="hover:underline"
-      //   >
-      //     (+65) 8826 0113
-      //   </a>
-      // ),
+      // fieldValue:
+      // "(+65) 8826 0113 / (+60) 11 5403 0113",
+      fieldValue: (
+        <>
+          {" "}
+          <a href="https://wa.me/6588260113" className="hover:underline">
+            (+65) 8826 0113
+            <FiExternalLink className="ml-2 inline-block" />
+          </a>
+          {" / (+60) 11 5403 0113"}
+        </>
+      ),
     },
     {
       fieldName: "Email",
