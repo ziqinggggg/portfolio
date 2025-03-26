@@ -37,9 +37,14 @@ const about = {
       fieldName: "Phone (Singapore)",
       fieldValue: (
         <>
-          <a href="https://wa.me/6588260113" className="hover:underline">
-            (+65) 8826 0113 (WhatsApp Only)
-            <FiExternalLink className="ml-2 inline-block text-base" /><br/>
+          <a href="https://wa.me/6588260113" className="group hover:underline">
+            (+65) 8826 0113 
+            {/* (WhatsApp Only) */}
+            <span className="inline-flex items-center group-hover:underline">
+          (WhatsApp Only)
+          <FiExternalLink className="ml-2 inline-block text-base" />
+        </span>
+            {/* <FiExternalLink className="ml-2 inline-block text-base" /> */}
           </a>
         </>
       ),
