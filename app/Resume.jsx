@@ -34,26 +34,26 @@ const about = {
       fieldValue: "Lai Zi Qing",
     },
     {
-      fieldName: "Phone",
-      // fieldValue:
-      // "(+65) 8826 0113 / (+60) 11 5403 0113",
+      fieldName: "Phone (Singapore)",
       fieldValue: (
         <>
-          {" "}
           <a href="https://wa.me/6588260113" className="hover:underline">
-            (+65) 8826 0113
-            <FiExternalLink className="ml-2 inline-block" />
+            (+65) 8826 0113 (WhatsApp Only)
+            <FiExternalLink className="ml-2 inline-block text-base" /><br/>
           </a>
-          {" / (+60) 11 5403 0113"}
         </>
       ),
+    },
+    {
+      fieldName: "Phone (Malaysia)",
+      fieldValue: "(+60) 11 5403 0113",
     },
     {
       fieldName: "Email",
       fieldValue: (
         <a href="mailto:ziqing0914@gmail.com" className="hover:underline ">
           ziqing0914@gmail.com
-          <FiExternalLink className="ml-2 inline-block" />
+          <FiExternalLink className="ml-2 inline-block text-base" />
         </a>
       ),
     },
