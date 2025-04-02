@@ -1,6 +1,6 @@
 // import { FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
-import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaWhatsapp, FaTelegram } from "react-icons/fa";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
@@ -19,6 +19,11 @@ const socials = [
     name: "WhatsApp",
     icon: <FaWhatsapp/>,
     url: "https://wa.me/6588260113",
+  },
+  {
+    name: "Telegram",
+    icon: <FaTelegram/>,
+    url: "https://t.me/ziqingggg",
   },
 ];
 
