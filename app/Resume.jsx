@@ -119,7 +119,7 @@ const skills = {
       icon: <FaReact />,
     },
     {
-      name: "Tailwind CSS v4",
+      name: "Tailwind CSS",
       icon: <SiTailwindcss />,
     },
 
@@ -174,6 +174,7 @@ const Resume = () => {
           defaultValue="about"
           className="flex flex-col md:flex-row gap-[60px]"
         >
+          
           <TabsList className="flex flex-col w-full max-w-[380px] md:max-w-[280px] lg:max-w-[380px] mx-auto md:mx-0 gap-6">
             <TabsTrigger value="about">About Me</TabsTrigger>
             <TabsTrigger value="experience">Experience</TabsTrigger>
@@ -192,7 +193,7 @@ const Resume = () => {
                 <p className="max-w-[680px] text-primary/60 mx-auto md:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-1 gap-y-6  mx-auto lg:mx-0">
+                <ul className="grid grid-cols-1 gap-y-6  mx-auto lg:mx-0">
                   {about.info.map((info, index) => {
                     return (
                       <li

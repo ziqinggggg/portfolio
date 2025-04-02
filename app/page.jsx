@@ -20,16 +20,16 @@ const Home = () => {
                 Hello, I'm <br />
                 <span className="text-accent">Lai Zi Qing</span>
               </h1>
-              <p className="text-2xl text-primary/90">Software Engineer</p>
-              <p className="max-w-[500px] mb-9 text-primary/80">
+              {/* <p className="text-2xl text-primary/90">Software Engineer</p> */}
+              <p className="max-w-[560px] mb-9 text-primary/80">
                 I'm a fresh graduate from NTU with a <b>Bachelor of Engineering (Electrical and Electronic Engineering)</b>, specializing in Info-communication Engineering. I have a passion for software
                 development and I'm always looking for new challenges to improve my skills.
               </p>
-              <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex flex-col lg:flex-row items-center gap-8">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center duration-10 hover:-translate-y-1"
+                  className="uppercase flex items-center duration-10 hover:-translate-y-1 w-full"
                 >
                   <a
                     href="assets/Resume-LaiZiQing.pdf"

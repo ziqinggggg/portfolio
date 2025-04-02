@@ -136,7 +136,7 @@ const Project = () => {
             /> */}
             <SliderButton
               containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] md:bottom-0 z-20 w-full justify-between md:w-max md:justify-none"
-              buttonStyles="bg-primary/30 hover:bg-accent/80 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all cursor-pointer"
+              buttonStyles="bg-primary/40 hover:bg-accent/80 text-secondary md:text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all cursor-pointer"
             />
           </Swiper>
         </div>
