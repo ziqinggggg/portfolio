@@ -34,7 +34,7 @@ const about = {
       fieldValue: "Lai Zi Qing",
     },
     {
-      fieldName: "Phone (Singapore)",
+      fieldName: "Phone (SG)",
       fieldValue: (
         <>
           <a href="https://wa.me/6588260113" className="group hover:underline">
@@ -50,7 +50,7 @@ const about = {
       ),
     },
     {
-      fieldName: "Phone (Malaysia)",
+      fieldName: "Phone (MY)",
       fieldValue: "(+60) 11 5403 0113",
     },
     {
