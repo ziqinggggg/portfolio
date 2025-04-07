@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Lai Zi Qing",
+  title: "Lai Zi Qing's Portfolio",
   description: "Lai Zi Qing's Portfolio",
 };
 
