@@ -31,7 +31,7 @@ const Home = () => {
                   className="uppercase flex items-center duration-10 hover:-translate-y-1 w-full"
                 >
                   <a
-                    href="assets/Resume-LaiZiQing.pdf"
+                    href="assets/LaiZiQing_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center"
