@@ -22,7 +22,7 @@ const projects = [
         stack: [{name: 'Flutter'}, {name: 'FireBase'}],
         image: '/assets/formcapture/544shots_so.png',
         live: '',
-        github: 'https://github.com/ziqinggggg/formcapture3.git',
+        github: 'https://github.com/ziqinggggg/formcapture3',
     },
     {
         num: '02',
