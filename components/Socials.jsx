@@ -8,7 +8,7 @@ const socials = [
   {
     name: "LinkedIn",
     icon: <FaLinkedinIn/>,
-    url: "https://www.linkedin.com/in/zi-qing-lai-a754b1253/",
+    url: "https://www.linkedin.com/in/zi-qing-lai/",
   },
   {
     name: "GitHub",
