@@ -33,25 +33,33 @@ const about = {
       fieldName: "Name",
       fieldValue: "Lai Zi Qing",
     },
+    // {
+    //   fieldName: "Phone (SG)",
+    //   fieldValue: (
+    //     <>
+    //       <a href="https://wa.me/6588260113" className="group hover:underline">
+    //         (+65) 8826 0113 
+    //         {/* (WhatsApp Only) */}
+    //         <span className="inline-flex items-center group-hover:underline">
+    //       (WhatsApp Only)
+    //       <FiExternalLink className="ml-2 inline-block text-base" />
+    //     </span>
+    //         {/* <FiExternalLink className="ml-2 inline-block text-base" /> */}
+    //       </a>
+    //     </>
+    //   ),
+    // },
     {
-      fieldName: "Phone (SG)",
-      fieldValue: (
+      fieldName: "Phone",
+      // fieldValue: "(+60) 11 5403 0113",
+        fieldValue: (
         <>
-          <a href="https://wa.me/6588260113" className="group hover:underline">
-            (+65) 8826 0113 
-            {/* (WhatsApp Only) */}
-            <span className="inline-flex items-center group-hover:underline">
-          (WhatsApp Only)
+          <a href="https://wa.me/601154030113" className="hover:underline">
+            (+60) 11 5403 0113
           <FiExternalLink className="ml-2 inline-block text-base" />
-        </span>
-            {/* <FiExternalLink className="ml-2 inline-block text-base" /> */}
           </a>
         </>
       ),
-    },
-    {
-      fieldName: "Phone (MY)",
-      fieldValue: "(+60) 11 5403 0113",
     },
     {
       fieldName: "Email",

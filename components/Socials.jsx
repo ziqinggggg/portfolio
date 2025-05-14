@@ -18,7 +18,7 @@ const socials = [
   {
     name: "WhatsApp",
     icon: <FaWhatsapp/>,
-    url: "https://wa.me/6588260113",
+    url: "https://wa.me/601154030113",
   },
   {
     name: "Telegram",
