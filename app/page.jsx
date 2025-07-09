@@ -1,13 +1,24 @@
+"use client";
+
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import { Analytics } from "@vercel/analytics/react"
+import { useEffect, useState } from "react";
 
 import Resume from "./Resume";
 import Project from "./Project";
+import Message from "./Message";
 
 const Home = () => {
+  const [visitorCount, setVisitorCount] = useState(null);
+    useEffect(() => {
+      fetch("/api/visit")
+        .then(res => res.json())
+        .then(data => setVisitorCount(data.count));
+  }, []);
+
   return (
     <main>
       {/* Home */}
@@ -69,9 +80,19 @@ const Home = () => {
         </div>
       </section>
 
+      
+      {/* Message */}
+      <section id="message" className="min-h-[90vh]">
+        <div className="container mx-auto">
+          <Message />
+        </div>
+      </section>
+
+
       <footer className="mt-auto w-full text-center pb-2 ">
         <p className="text-sm text-primary/50">
-          © {new Date().getFullYear()} Lai Zi Qing. All rights reserved.
+          © {new Date().getFullYear()} Lai Zi Qing. All rights reserved. 
+          {/* Visitor count: {visitorCount} */}
         </p>
       </footer>
     </main>

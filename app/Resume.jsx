@@ -196,7 +196,7 @@ const Resume = () => {
               className="w-full text-center lg:text-left"
             >
               <div className="flex flex-col gap-[30px] md:text-left">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <h2 className="h2">{about.title}</h2>
 
                 <p className="max-w-[680px] text-primary/60 mx-auto md:mx-0">
                   {about.description}
